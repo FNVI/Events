@@ -1,0 +1,27 @@
+{
+    "name": "fnvi/events",
+    "description": "Description of project Events.",
+    "authors": [
+        {
+            "name": "Joe Wheatley",
+            "email": "joew@fnvi.co.uk"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:FNVI/mongo.git"
+        }
+    ],
+    "require": {
+        "fnvi/mongo": "dev-master"
+    },
+    "autoload": {
+        "psr-4": { 
+            "FNVi\\Events\\": "src"
+        },
+        "files":[
+            "settings.php"
+        ]
+    }
+}
