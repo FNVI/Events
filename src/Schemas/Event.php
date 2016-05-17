@@ -8,5 +8,12 @@ use FNVi\Mongo\Schema;
  * @author Joe Wheatley <joew@fnvi.co.uk>
  */
 class Event extends Schema{
-    //put your code here
+    
+    public $type;
+    public $user;
+    public $seen = [];
+    
+    public function __construct() {
+        parent::__construct();
+    }
 }
